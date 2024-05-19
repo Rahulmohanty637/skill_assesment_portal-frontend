@@ -4,6 +4,8 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/solid";
 import logo from '../../../assets/logo.png';
+import HomeCarousel from "./Carousel";
+import { homeCarouselData } from "./HomeCarouselData";
 
 const Navbar = () => {
   let Links = [
@@ -57,6 +59,7 @@ const Navbar = () => {
         </ul>
         {/* button */}
       </div>
+      <HomeCarousel images={homeCarouselData}/>
     </div>
   );
 };

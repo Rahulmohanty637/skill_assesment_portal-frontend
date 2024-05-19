@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import Navbar from "./Features/Pages/Home/Navbar";
 
+
 function App() {
   return (
     <>
@@ -24,7 +25,8 @@ function App() {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu> */}
-      <Navbar/>
+      <Navbar />
+      
     </>
   );
 }
