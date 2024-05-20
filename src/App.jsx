@@ -9,6 +9,9 @@ import { homeCarouselData } from "./Features/Pages/Home/HomeCarouselData";
 import NavigationBar from "./Features/Pages/Home/NavigationBar";
 import Numbers from "./Features/Pages/Home/Numbers";
 import NewsAndSchemes from "./Features/Pages/Home/NewsAndSchemes";
+import LocateUs from "./Features/Pages/Home/Location";
+import Testimonials from "./Features/Pages/Home/Testimonial";
+import Footer from "./Features/Pages/Home/Footer";
 
 function App() {
   React.useEffect(() => {
@@ -27,6 +30,9 @@ function App() {
       <About />
       <Numbers/>
       <NewsAndSchemes/>
+      <LocateUs/>
+      <Testimonials/>
+      <Footer/>
     </div>
   );
 }
