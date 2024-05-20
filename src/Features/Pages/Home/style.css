@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+.img-hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-hover-effect:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 20px rgba(65, 105, 225, 0.7);
+}

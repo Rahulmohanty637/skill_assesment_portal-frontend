@@ -7,6 +7,8 @@ import About from "./Features/Pages/Home/About";
 import HomeCarousel from "./Features/Pages/Home/Carousel";
 import { homeCarouselData } from "./Features/Pages/Home/HomeCarouselData";
 import NavigationBar from "./Features/Pages/Home/NavigationBar";
+import Numbers from "./Features/Pages/Home/Numbers";
+import NewsAndSchemes from "./Features/Pages/Home/NewsAndSchemes";
 
 function App() {
   React.useEffect(() => {
@@ -23,6 +25,8 @@ function App() {
       <NavigationBar />
       <HomeCarousel images={homeCarouselData} />
       <About />
+      <Numbers/>
+      <NewsAndSchemes/>
     </div>
   );
 }
