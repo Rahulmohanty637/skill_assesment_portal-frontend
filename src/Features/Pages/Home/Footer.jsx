@@ -33,7 +33,7 @@ const Footer = () => {
           {/* company Details */}
           <div className=" py-8 px-4 ">
             <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3 font-serif">
-              Car Rental
+              Skill Assessment Platform
             </h1>
             <p className="text-sm">
               Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
@@ -42,7 +42,7 @@ const Footer = () => {
             <br />
             <div className="flex items-center gap-3">
               <FaLocationArrow />
-              <p>Noida, Uttar Pradesh</p>
+              <p>Bhubaneswar, Odisha</p>
             </div>
             <div className="flex items-center gap-3 mt-3">
               <FaMobileAlt />
