@@ -12,6 +12,7 @@ import NewsAndSchemes from "./Features/Pages/Home/NewsAndSchemes";
 import LocateUs from "./Features/Pages/Home/Location";
 import Testimonials from "./Features/Pages/Home/Testimonial";
 import Footer from "./Features/Pages/Home/Footer";
+import Header from "./Features/Pages/Home/Header";
 
 function App() {
   React.useEffect(() => {
@@ -25,6 +26,7 @@ function App() {
   }, []);
   return (
     <div>
+      <Header/>
       <NavigationBar />
       <HomeCarousel images={homeCarouselData} />
       <About />
