@@ -15,16 +15,16 @@ function NavigationBar() {
     { name: "HOME", link: "/", icon: <FaHome className="h-10 w-10" /> },
     { name: "ABOUT", link: "/", icon: <FaInfoCircle className="h-10 w-10" /> },
     { name: "STAKE HOLDERS", link: "/", icon: <FaUsers className="h-10 w-10" /> },
-    { name: "RESOURCES", link: "/", icon: <FaBook className="h-10 w-10" /> },
+    { name: "RESOURCES", link: "/", icon: <FaBook className="h-8 w-8" /> },
     { name: "TRAINING & ASSESMENT", link: "/", icon: <FaChalkboardTeacher className="h-10 w-10" /> },
-    { name: "CONTACT", link: "/", icon: <FaEnvelope className="h-10 w-10" /> },
+    { name: "CONTACT", link: "/", icon: <FaEnvelope className="h-8 w-8" /> },
   ];
 
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="shadow-md w-full border border-red-800 top-0 left-0">
-      <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
+    <div className="shadow-md w-full border border-[#A41034] top-0 left-0">
+      <div className="md:flex items-center justify-between bg-[#A41034] py-4 md:px-10 px-7">
         <div
           onClick={() => setOpen(!open)}
           className="absolute right-8 top-6 cursor-pointer md:hidden w-7 h-7"
@@ -32,7 +32,7 @@ function NavigationBar() {
           {open ? <XMarkIcon /> : <Bars3BottomRightIcon />}
         </div>
         <ul
-          className={`bg-white md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[1] left-0 w-full bg-[#A41034] md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
             open ? "top-22" : "top-[-500px]"
           }`}
         >
@@ -40,7 +40,7 @@ function NavigationBar() {
             <li key={link.name} className=" md:ml-8 md:my-0 my-7 font-semibold">
               <a
                 href={link.link}
-                className="flex items-center text-red-800 hover:text-gray-800 duration-500"
+                className="flex items-center text-white hover:text-gray-800 duration-500"
               >
                 {!open && link.icon}
                 <span className={!open ? "ml-2" : ""}>{link.name}</span>

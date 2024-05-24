@@ -13,6 +13,25 @@ import LocateUs from "./Features/Pages/Home/Location";
 import Testimonials from "./Features/Pages/Home/Testimonial";
 import Footer from "./Features/Pages/Home/Footer";
 import Header from "./Features/Pages/Home/Header";
+import Carousel from "./Features/Pages/Home/CarouselSlider";
+
+const slides = [
+  {
+    image:
+      "https://www.hirequotient.com/_next/image?url=https%3A%2F%2Fstrapi.caseyinterview.com%2Fuploads%2Fskills_assessment_tools_Benefits_you_are_missing_out_on_95f5c613d1.png&w=1920&q=75",
+    caption: "Slide 1",
+  },
+  {
+    image:
+      "https://sc0.blr1.digitaloceanspaces.com/large/844871-63919-fmulacfijw-1500895379.jpg",
+    caption: "Slide 2",
+  },
+  {
+    image:
+      "https://www.hirequotient.com/_next/image?url=https%3A%2F%2Fstrapi.caseyinterview.com%2Fuploads%2Fskills_assessment_tools_Benefits_you_are_missing_out_on_95f5c613d1.png&w=1920&q=75",
+    caption: "Slide 3",
+  },
+];
 
 function App() {
   React.useEffect(() => {
@@ -26,15 +45,16 @@ function App() {
   }, []);
   return (
     <div>
-      <Header/>
+      <Header />
       <NavigationBar />
-      <HomeCarousel images={homeCarouselData} />
+      {/* <HomeCarousel images={homeCarouselData} /> */}
+      <Carousel slides={slides}/>
       <About />
-      <Numbers/>
-      <NewsAndSchemes/>
-      <LocateUs/>
-      <Testimonials/>
-      <Footer/>
+      <Numbers />
+      <NewsAndSchemes />
+      <LocateUs />
+      <Testimonials />
+      <Footer />
     </div>
   );
 }

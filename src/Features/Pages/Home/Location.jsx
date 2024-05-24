@@ -11,7 +11,7 @@ const LocateUs = () => {
   const googleMapsImageSrc = "https://cdn.wccftech.com/wp-content/uploads/2020/08/Google-Maps.jpg";
 
   return (
-    <section className="bg-white m-10 p-6 shadow rounded-2xl flex flex-wrap justify-between border-8 border-blue-300">
+    <section className="bg-[#F4F4F4] m-10 p-6 shadow rounded-2xl flex flex-wrap justify-between border-8 border-[#3C3C3C]">
       <div className="flex flex-col items-start pt-5 md:pl-10 w-full md:w-1/2 lg:w-1/3">
         <div className="mt-2 text-left">
           <div className="text-xl font-bold">Our Office</div>

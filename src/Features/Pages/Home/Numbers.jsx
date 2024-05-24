@@ -7,7 +7,7 @@ import Image4 from "../../../assets/scheme.png";
 
 function Numbers() {
   return (
-    <section className="bg-white ml-10 mr-10 mt-10 p-6 shadow rounded-2xl flex flex-wrap justify-between border-8 border-blue-300">
+    <section className="bg-[#3C3C3C] ml-10 mr-10 mt-10 p-6 shadow rounded-2xl flex flex-wrap justify-between border-8 border-[#3C3C3C]">
       <div className="flex flex-col items-center pt-5 md:pl-10 w-full md:w-1/2 lg:w-auto">
         <div>
           <img
@@ -17,8 +17,8 @@ function Numbers() {
           />
         </div>
         <div className="mt-2 text-center">
-          <div className="text-2xl font-bold">8000+</div>
-          <div className="text-xl text-gray-600">Students</div>
+          <div className="text-4xl text-[#FFD575] font-bold">8000+</div>
+          <div className="text-2xl text-white font-semibold">Students</div>
         </div>
       </div>
       <div className="flex flex-col items-center pt-5 w-full md:w-1/2 lg:w-auto">
@@ -30,8 +30,10 @@ function Numbers() {
           />
         </div>
         <div className="mt-2 text-center">
-          <div className="text-2xl font-bold">100+</div>
-          <div className="text-xl text-gray-600">Training Partners</div>
+          <div className="text-4xl text-[#FFD575] font-bold">100+</div>
+          <div className="text-2xl text-white font-semibold">
+            Training Partners
+          </div>
         </div>
       </div>
       <div className="flex flex-col items-center pt-5 w-full md:w-1/2 lg:w-auto">
@@ -43,11 +45,13 @@ function Numbers() {
           />
         </div>
         <div className="mt-2 text-center">
-          <div className="text-2xl font-bold">10+</div>
-          <div className="text-xl text-gray-600">Assessment Partner</div>
+          <div className="text-4xl text-[#FFD575] font-bold">10+</div>
+          <div className="text-2xl text-white font-semibold">
+            Assessment Partner
+          </div>
         </div>
       </div>
-      <div className="flex flex-col items-center pt-5 w-full md:w-1/2 lg:w-auto">
+      <div className="flex flex-col items-center pt-5 w-full md:w-1/2 lg:w-auto lg:mr-10">
         <div>
           <img
             alt="Schemes"
@@ -56,8 +60,8 @@ function Numbers() {
           />
         </div>
         <div className="mt-2 text-center">
-          <div className="text-2xl font-bold">20+</div>
-          <div className="text-xl text-gray-600">Schemes</div>
+          <div className="text-4xl text-[#FFD575]  font-bold">20+</div>
+          <div className="text-2xl text-white font-semibold">Schemes</div>
         </div>
       </div>
     </section>

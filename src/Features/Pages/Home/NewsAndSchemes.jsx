@@ -10,7 +10,7 @@ const SampleNextArrow = (props) => {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} bg-blue-500 rounded-full`}
+      className={`${className} bg-[#A41034] rounded-full`}
       style={{ ...style, display: "block", right: "10px" }}
       onClick={onClick}
     />
@@ -21,7 +21,7 @@ const SamplePrevArrow = (props) => {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} bg-blue-500 rounded-full`}
+      className={`${className} bg-[#A41034] rounded-full`}
       style={{ ...style, display: "block", left: "10px", zIndex: 1 }}
       onClick={onClick}
     />
@@ -58,8 +58,8 @@ const NewsAndSchemes = () => {
   };
 
   return (
-    <div className="bg-blue-300 mt-10 p-6">
-      <h2 className="text-center text-2xl font-bold mb-4">News and Schemes</h2>
+    <div className="bg-[#A41034] mt-10 p-6">
+      <h2 className="text-white text-center text-3xl font-bold mb-4">News and Schemes</h2>
       <Slider {...settings}>
         <div className="px-2">
           <div className="bg-white p-4 rounded-2xl shadow">
