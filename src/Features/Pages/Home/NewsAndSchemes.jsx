@@ -62,7 +62,7 @@ const NewsAndSchemes = () => {
       <h2 className="text-white text-center text-3xl font-bold mb-4">News and Schemes</h2>
       <Slider {...settings}>
         <div className="px-2">
-          <div className="bg-white p-4 rounded-2xl shadow">
+          <div className="bg-[#FFD575] p-4 rounded-2xl shadow">
             <img src={Image1} alt="News 1" className="w-full rounded-t-2xl" />
             <p className="mt-2 text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Veritatis.
@@ -70,7 +70,7 @@ const NewsAndSchemes = () => {
           </div>
         </div>
         <div className="px-2">
-          <div className="bg-white p-4 rounded-2xl shadow">
+          <div className="bg-[#FFD575] p-4 rounded-2xl shadow">
             <img src={Image2} alt="News 2" className="w-full rounded-t-2xl" />
             <p className="mt-2 text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Veritatis.
@@ -78,7 +78,7 @@ const NewsAndSchemes = () => {
           </div>
         </div>
         <div className="px-2">
-          <div className="bg-white p-4 rounded-2xl shadow">
+          <div className="bg-[#FFD575] p-4 rounded-2xl shadow">
             <img src={Image3} alt="News 3" className="w-full rounded-t-2xl" />
             <p className="mt-2 text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Veritatis.
