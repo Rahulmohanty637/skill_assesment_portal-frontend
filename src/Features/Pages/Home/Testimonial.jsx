@@ -87,7 +87,7 @@ const Testimonials = () => {
               <div className="my-6">
                 <div
                   key={data.id}
-                  className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-4 rounded-xl  bg-blue-300 relative"
+                  className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-4 rounded-xl  bg-[#3C3C3C] relative"
                 >
                   <div className="mb-4">
                     <img
@@ -100,12 +100,12 @@ const Testimonials = () => {
                   <div className="flex flex-col items-center gap-4">
                     <div className="space-y-3">
                       <p className="text-xs text-white">{data.text}</p>
-                      <h1 className="text-xl font-bold text-black/80  font-cursive2">
+                      <h1 className="text-xl font-bold text-[#FFD575]  font-cursive2">
                         {data.name}
                       </h1>
                     </div>
                   </div>
-                  <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">
+                  <p className="text-[#FFD575] text-9xl font-serif absolute top-0 right-0">
                     ,,
                   </p>
                 </div>
