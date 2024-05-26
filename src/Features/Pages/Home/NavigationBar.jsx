@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "../../../assets/logo.png";
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import {
   FaHome,
