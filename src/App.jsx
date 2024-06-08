@@ -14,6 +14,7 @@ import Testimonials from "./Features/Pages/Home/Testimonial";
 import Footer from "./Features/Pages/Home/Footer";
 import Header from "./Features/Pages/Home/Header";
 import Carousel from "./Features/Pages/Home/CarouselSlider";
+import RegistrationForm from "./Features/Pages/AssessmentBody/RegistrationForm";
 
 const slides = [
   {
@@ -54,6 +55,7 @@ function App() {
       <NewsAndSchemes />
       <LocateUs />
       <Testimonials />
+      <RegistrationForm/>
       <Footer />
     </div>
   );
