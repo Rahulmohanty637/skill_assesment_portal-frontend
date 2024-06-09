@@ -15,6 +15,7 @@ import Footer from "./Features/Pages/Home/Footer";
 import Header from "./Features/Pages/Home/Header";
 import Carousel from "./Features/Pages/Home/CarouselSlider";
 import RegistrationForm from "./Features/Pages/AssessmentBody/RegistrationForm";
+import AssessmentPartnerDashboard from "./Features/Pages/AssessmentBody/AssessmentPartnerDashboard";
 
 const slides = [
   {
@@ -49,13 +50,14 @@ function App() {
       <Header />
       <NavigationBar />
       {/* <HomeCarousel images={homeCarouselData} /> */}
-      <Carousel slides={slides}/>
+      {/* <Carousel slides={slides}/>
       <About />
       <Numbers />
       <NewsAndSchemes />
       <LocateUs />
       <Testimonials />
-      <RegistrationForm/>
+      <RegistrationForm/> */}
+      <AssessmentPartnerDashboard/>
       <Footer />
     </div>
   );
