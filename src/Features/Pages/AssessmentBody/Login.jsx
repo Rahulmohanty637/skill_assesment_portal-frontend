@@ -1,5 +1,6 @@
 import React from "react";
-import image from "../assets/loginimage.jpg";
+import image from "../../../assets/poorpeople.png";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -23,9 +24,11 @@ const Login = () => {
               placeholder="Password"
               className="p-2 rounded-xl border"
             ></input>
-            <button className="bg-green-800 rounded-2xl text-white py-2">
-              Login
-            </button>
+            <Link to="/dashboard">
+              <button className="bg-green-800 rounded-2xl text-white py-2">
+                Login
+              </button>
+            </Link>
           </form>
           <div className="mt-10 grid grid-cols-3 items-center text-gray-400">
             <hr className="border-gray-400"></hr>

@@ -10,12 +10,17 @@ import {
 import Layout from "./Layout";
 import HomePage from "./Features/Pages/Home/HomePage";
 import RegistrationForm from "./Features/Pages/AssessmentBody/RegistrationForm";
+import Login from "./Features/Pages/AssessmentBody/Login";
+import Dashboard from "./Features/Pages/AssessmentBody/Dashboard";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="" element={<Layout />}>
       <Route path="" element={<HomePage />} />
       <Route path="registration" element={<RegistrationForm />} />
+      <Route path="login" element={<Login />} />
+      <Route path="dashboard" element={<Dashboard />} />
     </Route>
   )
 );

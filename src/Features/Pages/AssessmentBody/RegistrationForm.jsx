@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const RegistrationForm = () => {
   const [page, setPage] = useState(0);
@@ -487,12 +488,14 @@ const RegistrationForm = () => {
               Next
             </button>
           ) : (
-            <button
-              type="submit"
-              className="bg-green-500 text-white font-semibold px-4 py-2 rounded hover:bg-green-600 ml-auto"
-            >
-              Submit
-            </button>
+            <Link to="/login">
+              <button
+                type="submit"
+                className="bg-green-500 text-white font-semibold px-4 py-2 rounded hover:bg-green-600 ml-auto"
+              >
+                Submit
+              </button>
+            </Link>
           )}
         </div>
       </form>
