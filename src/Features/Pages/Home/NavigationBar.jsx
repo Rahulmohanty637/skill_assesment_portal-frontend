@@ -8,14 +8,23 @@ import {
   FaChalkboardTeacher,
   FaEnvelope,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function NavigationBar() {
   let Links = [
     { name: "HOME", link: "/", icon: <FaHome className="h-10 w-10" /> },
     { name: "ABOUT", link: "/", icon: <FaInfoCircle className="h-10 w-10" /> },
-    { name: "STAKE HOLDERS", link: "/", icon: <FaUsers className="h-10 w-10" /> },
+    {
+      name: "STAKE HOLDERS",
+      link: "/",
+      icon: <FaUsers className="h-10 w-10" />,
+    },
     { name: "RESOURCES", link: "/", icon: <FaBook className="h-8 w-8" /> },
-    { name: "TRAINING & ASSESMENT", link: "/", icon: <FaChalkboardTeacher className="h-10 w-10" /> },
+    {
+      name: "TRAINING & ASSESMENT",
+      link: "/",
+      icon: <FaChalkboardTeacher className="h-10 w-10" />,
+    },
     { name: "CONTACT", link: "/", icon: <FaEnvelope className="h-8 w-8" /> },
   ];
 
@@ -46,9 +55,11 @@ function NavigationBar() {
               </a>
             </li>
           ))}
-          <button className="btn bg-yellow-400 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static">
-            Get Started
-          </button>
+          <Link to="/registration">
+            <button className="btn bg-yellow-400 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static">
+              Get Started
+            </button>
+          </Link>
         </ul>
       </div>
     </div>
