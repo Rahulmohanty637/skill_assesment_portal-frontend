@@ -98,8 +98,36 @@ const RegistrationForm = () => {
                 className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
             </div>
+            <div className="grid grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <label
+                  htmlFor="agency-name"
+                  className="block text-sm font-medium text-gray-700"
+                >
+                  Password
+                </label>
+                <input
+                  id="agency-name"
+                  placeholder="Enter strong password"
+                  className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                />
+              </div>
+              <div className="space-y-2">
+                <label
+                  htmlFor="phone"
+                  className="block text-sm font-medium text-gray-700"
+                >
+                  Confirm Password
+                </label>
+                <input
+                  id="password"
+                  placeholder="Confirm your password"
+                  className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                />
+              </div>
+            </div>
             <div className="space-y-2">
-              <h3 className="text-lg font-medium text-gray-700">
+              <h3 className="text-lg font-medium text-[#A41034]">
                 Registered Office Address
               </h3>
               <div className="grid grid-cols-2 gap-6">
@@ -173,7 +201,7 @@ const RegistrationForm = () => {
               </div>
             </div>
             <div className="space-y-2">
-              <h3 className="text-lg font-medium text-gray-700">
+              <h3 className="text-lg font-medium text-[#A41034]">
                 Communication Address
               </h3>
               <div className="grid grid-cols-2 gap-6">
@@ -252,7 +280,7 @@ const RegistrationForm = () => {
         return (
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-[#A41034]">
+              <label className="block text-sm font-medium text-gray-700">
                 Head of the Organization
               </label>
               <input
@@ -260,11 +288,11 @@ const RegistrationForm = () => {
                 name="head"
                 value={formData.head}
                 onChange={handleChange}
-                className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-[#A41034]">
+              <label className="block text-sm font-medium text-gray-700">
                 SPOC Name
               </label>
               <input
@@ -272,11 +300,11 @@ const RegistrationForm = () => {
                 name="spocName"
                 value={formData.spocName}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-[#A41034]">
+              <label className="block text-sm font-medium text-gray-700">
                 SPOC Email ID
               </label>
               <input
@@ -284,11 +312,11 @@ const RegistrationForm = () => {
                 name="spocEmail"
                 value={formData.spocEmail}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-[#A41034]">
+              <label className="block text-sm font-medium text-gray-700">
                 SPOC Contact No
               </label>
               <input
@@ -296,11 +324,11 @@ const RegistrationForm = () => {
                 name="spocPhone"
                 value={formData.spocPhone}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-[#A41034]">
+              <label className="block text-sm font-medium text-gray700">
                 Legal Status of the Organization
               </label>
               <input
@@ -308,11 +336,11 @@ const RegistrationForm = () => {
                 name="legalStatus"
                 value={formData.legalStatus}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-[#A41034]">
+              <label className="block text-sm font-medium text-gray-700">
                 PAN of the Company
               </label>
               <input
@@ -320,11 +348,11 @@ const RegistrationForm = () => {
                 name="pan"
                 value={formData.pan}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-[#A41034]">
+              <label className="block text-sm font-medium text-gray-700">
                 GST No of Company
               </label>
               <input
@@ -332,7 +360,7 @@ const RegistrationForm = () => {
                 name="gst"
                 value={formData.gst}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
             </div>
           </div>
@@ -341,7 +369,7 @@ const RegistrationForm = () => {
         return (
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-[#A41034]">
+              <label className="block text-sm font-medium text-gray-700">
                 No of Branches/Office and Location
               </label>
               <input
@@ -349,11 +377,11 @@ const RegistrationForm = () => {
                 name="branches"
                 value={formData.branches}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-[#A41034]">
+              <label className="block text-sm font-medium text-gray-700">
                 Geographical Regions
               </label>
               <input
@@ -361,11 +389,11 @@ const RegistrationForm = () => {
                 name="regions"
                 value={formData.regions}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-[#A41034]">
+              <label className="block text-sm font-medium text-gray-700">
                 State Under the Region
               </label>
               <input
@@ -373,11 +401,11 @@ const RegistrationForm = () => {
                 name="states"
                 value={formData.states}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-[#A41034]">
+              <label className="block text-sm font-medium text-gray-700">
                 Total No of Certified Assessor
               </label>
               <input
@@ -385,11 +413,11 @@ const RegistrationForm = () => {
                 name="totalAssessors"
                 value={formData.totalAssessors}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-[#A41034]">
+              <label className="block text-sm font-medium text-gray-700">
                 No of Sector Skill Council AA is Affiliated
               </label>
               <input
@@ -397,11 +425,11 @@ const RegistrationForm = () => {
                 name="sectorCount"
                 value={formData.sectorCount}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-[#A41034]">
+              <label className="block text-sm font-medium text-gray-700">
                 Name of the Sector Skill Council AA is Affiliated
               </label>
               <input
@@ -409,11 +437,11 @@ const RegistrationForm = () => {
                 name="sectorNames"
                 value={formData.sectorNames}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-[#A41034]">
+              <label className="block text-sm font-medium text-gray-700">
                 Upload Recognition Letter Received from NCVET
               </label>
               <input
@@ -436,7 +464,7 @@ const RegistrationForm = () => {
         onSubmit={handleSubmit}
         className="bg-[#ffc107] p-8 rounded-lg shadow-md w-full max-w-2xl space-y-6"
       >
-        <h2 className="text-2xl font-bold text-center text-gray-700">
+        <h2 className="text-2xl font-bold text-center text-[#A41034]">
           Registration Form
         </h2>
         {renderPage()}
@@ -461,7 +489,7 @@ const RegistrationForm = () => {
           ) : (
             <button
               type="submit"
-              className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 ml-auto"
+              className="bg-green-500 text-white font-semibold px-4 py-2 rounded hover:bg-green-600 ml-auto"
             >
               Submit
             </button>
