@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./Features/Pages/Contants/Header";
+import Header from "./Features/Pages/Constants/Header";
 import { Outlet } from "react-router-dom";
-import Footer from "./Features/Pages/Contants/Footer";
+import Footer from "./Features/Pages/Constants/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
