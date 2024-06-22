@@ -29,7 +29,7 @@ const HomePage = () => {
   
   return (
     <>
-      <NavigationBar />
+      {/* <NavigationBar /> */}
       {/* <HomeCarousel images={homeCarouselData} /> */}
       <Carousel slides={slides} />
       <About />

@@ -27,7 +27,7 @@ const FooterLinks = [
 ];
 const Footer = () => {
   return (
-    <div className="bg-[#A41034] mt-14 border-t-4 border-[#A41034] ">
+    <div className="bg-[#A41034] border-t-4 border-[#A41034] ">
       <div className="space-y-2 text-center mt-3 -mb-14">
         <h1 className="text-xl font-bold md:text-xl lg:text-3xl text-white">
           Centurion University of Technology and Management

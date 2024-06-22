@@ -1,9 +1,13 @@
 import React from 'react';
+import Card from './Card';
+import ScheduleBox from './ScheduleBox';
 
 const AssessmentSchedule = () => {
   return (
     <div>
-      <h2 className="text-2xl font-semibold">Assessment Schedule</h2>
+      <h2>Dashboard</h2>
+      <Card/>
+      <ScheduleBox/>
     </div>
   );
 };
