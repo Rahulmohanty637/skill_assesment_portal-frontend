@@ -1,5 +1,5 @@
 import React from "react";
-import NavigationBar from "./NavigationBar";
+import NavigationBar from "../Constants/NavigationBar";
 import Carousel from "./CarouselSlider";
 import About from "./About";
 import Numbers from "./Numbers";

@@ -4,7 +4,8 @@ import { Outlet } from "react-router-dom";
 import Footer from "./Features/Pages/Constants/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import NavigationBar from "./Features/Pages/Home/NavigationBar";
+import NavigationBar from "./Features/Pages/Constants/NavigationBar";
+import Navbar from "./Features/Pages/Constants/Navbar";
 
 const Layout = () => {
   React.useEffect(() => {
@@ -19,7 +20,8 @@ const Layout = () => {
   return (
     <>
       <Header />
-      <NavigationBar/>
+      {/* <NavigationBar/> */}
+      <Navbar/>
       <Outlet />
       <Footer />
     </>

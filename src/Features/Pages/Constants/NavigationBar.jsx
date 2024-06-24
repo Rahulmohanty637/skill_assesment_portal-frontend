@@ -55,7 +55,7 @@ function NavigationBar() {
               </a>
             </li>
           ))}
-          <Link to="/registration">
+          <Link to="/login">
             <button className="btn bg-yellow-400 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static">
               Get Started
             </button>
