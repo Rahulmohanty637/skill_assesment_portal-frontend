@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const AddAssessorForm = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -41,9 +41,13 @@ const AddAssessorForm = () => {
       case 1:
         return (
           <div>
-            <h2 className="text-2xl font-bold text-center text-[#A41034]">Personal Information</h2>
+            <h2 className="text-2xl font-bold text-center text-[#A41034]">
+              Personal Information
+            </h2>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Name of the Assessor</label>
+              <label className="block text-sm font-medium text-gray-700">
+                Name of the Assessor
+              </label>
               <input
                 type="text"
                 name="name"
@@ -53,7 +57,9 @@ const AddAssessorForm = () => {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Phone Number</label>
+              <label className="block text-sm font-medium text-gray-700">
+                Phone Number
+              </label>
               <input
                 type="text"
                 name="phone"
@@ -63,7 +69,9 @@ const AddAssessorForm = () => {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Email ID</label>
+              <label className="block text-sm font-medium text-gray-700">
+                Email ID
+              </label>
               <input
                 type="email"
                 name="email"
@@ -83,9 +91,13 @@ const AddAssessorForm = () => {
       case 2:
         return (
           <div>
-            <h2 className="text-2xl font-bold text-center text-[#A41034]">Educational Qualifications</h2>
+            <h2 className="text-2xl font-bold text-center text-[#A41034]">
+              Educational Qualifications
+            </h2>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Educational Qualification 1</label>
+              <label className="block text-sm font-medium text-gray-700">
+                Educational Qualification 1
+              </label>
               <input
                 type="text"
                 name="educationalQualification1"
@@ -95,7 +107,9 @@ const AddAssessorForm = () => {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Educational Qualification 2</label>
+              <label className="block text-sm font-medium text-gray-700">
+                Educational Qualification 2
+              </label>
               <input
                 type="text"
                 name="educationalQualification2"
@@ -105,7 +119,9 @@ const AddAssessorForm = () => {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Educational Qualification 3</label>
+              <label className="block text-sm font-medium text-gray-700">
+                Educational Qualification 3
+              </label>
               <input
                 type="text"
                 name="educationalQualification3"
@@ -115,7 +131,9 @@ const AddAssessorForm = () => {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Educational Qualification 4</label>
+              <label className="block text-sm font-medium text-gray-700">
+                Educational Qualification 4
+              </label>
               <input
                 type="text"
                 name="educationalQualification4"
@@ -143,9 +161,13 @@ const AddAssessorForm = () => {
       case 3:
         return (
           <div>
-            <h2 className="text-2xl font-bold text-center text-[#A41034]">Professional Experience and Address</h2>
+            <h2 className="text-2xl font-bold text-center text-[#A41034]">
+              Professional Experience and Address
+            </h2>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Relevant Industry Experience (Years)</label>
+              <label className="block text-sm font-medium text-gray-700">
+                Relevant Industry Experience (Years)
+              </label>
               <input
                 type="text"
                 name="industryExperience"
@@ -155,7 +177,9 @@ const AddAssessorForm = () => {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Other Relevant Experience</label>
+              <label className="block text-sm font-medium text-gray-700">
+                Other Relevant Experience
+              </label>
               <input
                 type="text"
                 name="otherExperience"
@@ -165,7 +189,9 @@ const AddAssessorForm = () => {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Address</label>
+              <label className="block text-sm font-medium text-gray-700">
+                Address
+              </label>
               <input
                 type="text"
                 name="address"
@@ -174,38 +200,48 @@ const AddAssessorForm = () => {
                 className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
             </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700">District</label>
-              <input
-                type="text"
-                name="district"
-                value={formData.district}
-                onChange={handleChange}
-                className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-              />
+            <div className="flex justify-evenly">
+              <div className="p-2">
+                <label className="block text-sm font-medium text-gray-700">
+                  District
+                </label>
+                <input
+                  type="text"
+                  name="district"
+                  value={formData.district}
+                  onChange={handleChange}
+                  className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                />
+              </div>
+              <div className="p-2">
+                <label className="block text-sm font-medium text-gray-700">
+                  State
+                </label>
+                <input
+                  type="text"
+                  name="state"
+                  value={formData.state}
+                  onChange={handleChange}
+                  className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                />
+              </div>
+              <div className="p-2">
+                <label className="block text-sm font-medium text-gray-700">
+                  Pincode
+                </label>
+                <input
+                  type="text"
+                  name="pincode"
+                  value={formData.pincode}
+                  onChange={handleChange}
+                  className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                />
+              </div>
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">State</label>
-              <input
-                type="text"
-                name="state"
-                value={formData.state}
-                onChange={handleChange}
-                className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700">Pincode</label>
-              <input
-                type="text"
-                name="pincode"
-                value={formData.pincode}
-                onChange={handleChange}
-                className="mt-1 block w-full h-8 p-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700">Certified Course Name (if any)</label>
+              <label className="block text-sm font-medium text-gray-700">
+                Certified Course Name (if any)
+              </label>
               <input
                 type="text"
                 name="certifiedCourseName"
@@ -215,7 +251,9 @@ const AddAssessorForm = () => {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Course Code (if any)</label>
+              <label className="block text-sm font-medium text-gray-700">
+                Course Code (if any)
+              </label>
               <input
                 type="text"
                 name="courseCode"
@@ -225,7 +263,9 @@ const AddAssessorForm = () => {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Upload Photo</label>
+              <label className="block text-sm font-medium text-gray-700">
+                Upload Photo
+              </label>
               <input
                 type="file"
                 name="photo"

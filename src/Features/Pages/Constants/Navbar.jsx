@@ -1,31 +1,57 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import {
+  FaHome,
+  FaInfoCircle,
+  FaUsers,
+  FaBook,
+  FaChalkboardTeacher,
+  FaEnvelope,
+  FaBell,
+} from "react-icons/fa";
 
 function Navbar() {
   const links = [
-    { name: "Home", link: "/" },
-    { name: "Stakeholders", link: "/stakeholder" },
+    { name: "Home", link: "/", icon: <FaHome className="h-8 w-8" /> },
+    {
+      name: "Stakeholders",
+      link: "/stakeholder",
+      icon: <FaUsers className="h-8 w-8" />,
+    },
     {
       name: "Training & Assessment",
       link: "",
+      icon: <FaChalkboardTeacher className="h-8 w-8" />,
       submenu: [
         {
           name: "Training Partner Login",
-          link: "/skillportal/traningpartner",
+          link: "/login",
           external: false,
         },
         {
           name: "Assessment Partner Login",
-          link: "/skillportal/assesmentagencies",
+          link: "/login",
           external: false,
         },
         { name: "Certifications", link: "/certifications" },
       ],
     },
-    { name: "Administrative", link: "/adminstrative" },
-    { name: "Resources", link: "/resource" },
-    { name: "Notifications", link: "/news" },
+    {
+      name: "Administrative",
+      link: "/adminstrative",
+      icon: <FaInfoCircle className="h-8 w-8 p-1" />,
+    },
+    {
+      name: "Resources",
+      link: "/resource",
+      icon: <FaBook className="h-8 w-8 p-1" />,
+    },
+    {
+      name: "Notifications",
+      link: "/news",
+      icon: <FaBell className="h-8 w-8 p-1" />,
+    },
   ];
 
   const [open, setOpen] = useState(false);
@@ -93,9 +119,10 @@ function Navbar() {
                 >
                   <a
                     href={link.link}
-                    className="text-white hover:text-gray-300 transition duration-300"
+                    className="flex items-center text-white transition duration-300"
                   >
-                    {link.name}
+                    {!open && link.icon}
+                    <span className={!open ? "ml-2" : ""}>{link.name}</span>
                   </a>
                   {link.submenu && (
                     <ul className="submenu md:absolute md:bg-white md:shadow-lg md:rounded-base md:mt-2">
@@ -143,7 +170,7 @@ function Navbar() {
               className="hidden md:block"
               onClick={handleContactClick}
             >
-              <button className="btn bg-[#0066ff] text-base text-white font-semibold px-3 py-1 rounded duration-500 hover:bg-[#3f37c9]">
+              <button className="btn bg-yellow-400 text-base text-black font-semibold px-3 py-1 rounded duration-500 hover:bg-yellow-600">
                 Contact Us
               </button>
             </Link>

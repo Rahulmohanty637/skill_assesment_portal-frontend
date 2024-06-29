@@ -1,11 +1,11 @@
 import React from "react";
-import NavigationBar from "../Constants/NavigationBar";
-import Carousel from "./CarouselSlider";
 import About from "./About";
-import Numbers from "./Numbers";
 import NewsAndSchemes from "./NewsAndSchemes";
-import LocateUs from "./Location";
+import LocationAndContact from "./Location";
 import Testimonials from "./Testimonial";
+import Carousel from "./CarouselSlider";
+import FeaturesSection from "./Features";
+import KeyStakeholders from "./KeyStakeHolders";
 
 const slides = [
   {
@@ -29,13 +29,13 @@ const HomePage = () => {
   
   return (
     <>
-      {/* <NavigationBar /> */}
-      {/* <HomeCarousel images={homeCarouselData} /> */}
-      <Carousel slides={slides} />
+      <Carousel/>
       <About />
-      <Numbers />
+      {/* <Numbers /> */}
+      <FeaturesSection/>
+      <KeyStakeholders/>
       <NewsAndSchemes />
-      <LocateUs />
+      <LocationAndContact />
       <Testimonials />
     </>
   );

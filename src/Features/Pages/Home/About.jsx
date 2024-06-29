@@ -3,7 +3,7 @@ import AbouImg from "../../../../public/abt.jpg";
 
 const About = () => {
   return (
-    <div className="bg-[#F4F4F4] sm:min-h-[600px] sm:grid sm:place-items-center duration-300 mt-7">
+    <div className="bg-[#F4F4F4] sm:min-h-[600px] sm:grid sm:place-items-center duration-300 mt-7 xl:pl-10">
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center">
           <div data-aos="slide-right" data-aos-duration="1500">
@@ -39,7 +39,7 @@ const About = () => {
                 services to the target population. Promotion of lighthouse
                 project interventions in the target area.
               </p>
-              <button className="btn bg-[#A41034] text-white font-semibold px-3 py-1 rounded">
+              <button className="btn bg-yellow-400 text-white font-semibold px-3 py-1 rounded">
                 Know more
               </button>
             </div>
